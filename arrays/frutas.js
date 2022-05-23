@@ -15,7 +15,7 @@ let ram = pc1["ram"];
 let gigas = pc1["almacenamiento"];
 
 frase = `el nombre de mi pc es: ${nombre} <br> 
-         el procesador es: ${procesador} <br>
+         el procesador es: ${core} <br>
          la memoria ram es: ${ram} <br>
          el almacenamiento de mi compu es: ${gigas}`;
 
