@@ -1,42 +1,51 @@
-/* let frutas = ["camandula","fresa","banana","mango","mangostino","physalis","pera"];
-
-document.write(frutas[5]) 
-
-let pc1 = {
-    nombre: "CrackMaster2022",
-    procesador: "Intel Core i7 de 10th Generacion",
-    ram: "16GB",
-    almacenamiento: "2TB"    
-};
-
-let nombre = pc1["nombre"];
-let core = pc1["procesador"];
-let ram = pc1["ram"];
-let gigas = pc1["almacenamiento"];
-
-frase = `el nombre de mi pc es: <b>${nombre}</b> <br> 
-         el procesador es: <b>${core}</b> <br>
-         la memoria ram es: <b>${ram}</b> <br>
-         el almacenamiento de mi compu es: <b>${gigas}</b>`;
-
-document.write(frase)
 
 
-let numeroparasumar = 0;
+// for (let i = 0; i < 9; i++) {
+//     if(i == 2){
+//         continue;
+//     }
+// document.write(i + "<br>");
+// }
+
+// IN // MUESTRA POSICIÓN
+
+// OF // MUESTRA valor de los elementos
+
+// let animales = ["gato", "perro", "tiranosaurioi rex"];
+// animales.tamano = "grande";
+
+// for (animal in animales){
+//     document.write(animal + "<br>");
+// }
+
+// document.write("<br>");
+
+// for (animal of animales){
+//     document.write(animal + "<br>");
+// }
+
+// document.write(animales.tamano)
 
 
-while (numeroparasumar < 1000) {
-    numeroparasumar++;
-    document.write(numeroparasumar + "<br>");
-    if (numeroparasumar == 10){
-        break;
+//break: Significa detener la ejecución de un bucle y salirse de él. 
+//continue: Sirve para detener la iteración actual y volver al principio del bucle para realizar otra iteración, si corresponde.
+
+//LABEL// forRancio: // Las labels funcionan para terminar todos los bucles y/o acciones que estan dentro de un for
+
+// time > 3:06:49
+
+array1 = ["maria","josefa","carola","luciee"];
+array2 = ["pepito","plutarco",array1,"josefina"]
+
+forRancio:
+for (let array in array2) {
+    if (array == 2){
+        for (let array of array1){            
+            continue forRancio;
+            document.write(array + "<br>")                             
+        }
+    } else {
+        document.write(array2[array] + "<br>")
     }
-}
 
-document.write("FIN")
-*/
-
-
-for (let i = 0; i <= 6; i--) {
-    document.write(i + "<br>")
 }
